@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('git') {
           steps {
-             bat 'mvn install'
+             git clone " https://github.com/sk143405/spring-petclinic.git "
             }
         }
     }
